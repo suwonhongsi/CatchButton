@@ -17,7 +17,7 @@ namespace CatchButton
         private Random random = new Random();
         int score = 0;
         int missCount = 0;
-        const int MaxMiss = 20;
+        const int MaxMiss = 50;
 
         public Form1()
         {
