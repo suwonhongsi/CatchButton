@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Target = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Target
             // 
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(503, 336);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(319, 117);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Click";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.Target.Font = new System.Drawing.Font("맑은 고딕", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Target.Location = new System.Drawing.Point(503, 336);
+            this.Target.Name = "Target";
+            this.Target.Size = new System.Drawing.Size(319, 117);
+            this.Target.TabIndex = 0;
+            this.Target.Text = "Click";
+            this.Target.UseVisualStyleBackColor = true;
+            this.Target.Click += new System.EventHandler(this.button1_Click);
+            this.Target.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1374, 801);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Target);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -57,7 +57,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Target;
     }
 }
 

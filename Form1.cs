@@ -21,13 +21,13 @@ namespace CatchButton
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            int maxX = this.ClientSize.Width - button1.Width;
-            int maxY = this.ClientSize.Height - button1.Height;
+            int maxX = this.ClientSize.Width - Target.Width;
+            int maxY = this.ClientSize.Height - Target.Height;
 
             int nextX = random.Next(0, maxX);
             int nextY = random.Next(0, maxY);
 
-            button1.Location = new Point(nextX, nextY);
+            Target.Location = new Point(nextX, nextY);
 
             this.Text = $"Button Location - X: {nextX}, Y: {nextY}";
         }
