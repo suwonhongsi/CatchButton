@@ -22,6 +22,11 @@ namespace CatchButton
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
+            if (Control.ModifierKeys == Keys.Shift)
+            {
+                return;
+            }
+
             SystemSounds.Beep.Play();
 
             int maxX = this.ClientSize.Width - Target.Width;
