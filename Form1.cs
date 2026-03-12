@@ -38,6 +38,7 @@ namespace CatchButton
         private void button1_Click(object sender, EventArgs e)
         {
             SystemSounds.Asterisk.Play();
+            MessageBox.Show("축하합니다! 버튼을 잡았어요!", "Success");
         }
     }
 }
