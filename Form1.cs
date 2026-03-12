@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace CatchButton
 {
@@ -21,6 +22,8 @@ namespace CatchButton
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
+            SystemSounds.Beep.Play();
+
             int maxX = this.ClientSize.Width - Target.Width;
             int maxY = this.ClientSize.Height - Target.Height;
 
@@ -34,7 +37,7 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            SystemSounds.Asterisk.Play();
         }
     }
 }
