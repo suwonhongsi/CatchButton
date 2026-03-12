@@ -17,6 +17,7 @@ namespace CatchButton
         private Random random = new Random();
         int score = 0;
         int missCount = 0;
+        const int MaxMiss = 20;
 
         public Form1()
         {
@@ -34,6 +35,14 @@ namespace CatchButton
 
             score -= 10;
             missCount++;
+
+            if (missCount >= MaxMiss)
+            {
+                Target.Enabled = false;
+                MessageBox.Show("Game Over! 20번이나 놓치셨군요.");
+                this.Text = "Game Over - 다시 시작 버튼을 누르세요";
+                return; 
+            }
 
             int maxX = this.ClientSize.Width - Target.Width;
             int maxY = this.ClientSize.Height - Target.Height;
@@ -60,6 +69,19 @@ namespace CatchButton
 
             MessageBox.Show("축하합니다! 버튼을 잡았어요!", "Success");
             this.Text = $"Score: {score} | Location - X: {Target.Location.X}, Y: {Target.Location.Y}";
+        }
+
+        private void Restrat_Click(object sender, EventArgs e)
+        {
+            score = 0;
+            missCount = 0;
+
+            Target.Enabled = true;
+            Target.Size = new Size(216, 65);
+            Target.Location = new Point(100, 100);
+
+            this.Text = "게임을 다시 시작합니다!";
+            MessageBox.Show("모든 정보가 초기화되었습니다. 다시 잡아보세요!");
         }
     }
     

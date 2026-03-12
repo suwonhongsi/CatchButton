@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.Target = new System.Windows.Forms.Button();
+            this.Restrat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Target
@@ -44,11 +45,23 @@
             this.Target.Click += new System.EventHandler(this.button1_Click);
             this.Target.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
+            // Restrat
+            // 
+            this.Restrat.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Restrat.Location = new System.Drawing.Point(1110, 693);
+            this.Restrat.Name = "Restrat";
+            this.Restrat.Size = new System.Drawing.Size(230, 78);
+            this.Restrat.TabIndex = 1;
+            this.Restrat.Text = "Restart";
+            this.Restrat.UseVisualStyleBackColor = true;
+            this.Restrat.Click += new System.EventHandler(this.Restrat_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1374, 801);
+            this.Controls.Add(this.Restrat);
             this.Controls.Add(this.Target);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -59,6 +72,7 @@
         #endregion
 
         private System.Windows.Forms.Button Target;
+        private System.Windows.Forms.Button Restrat;
     }
 }
 
