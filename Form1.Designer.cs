@@ -33,13 +33,14 @@
             // 
             // Target
             // 
+            this.Target.BackColor = System.Drawing.Color.Yellow;
             this.Target.Font = new System.Drawing.Font("맑은 고딕", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Target.Location = new System.Drawing.Point(503, 336);
             this.Target.Name = "Target";
-            this.Target.Size = new System.Drawing.Size(319, 117);
+            this.Target.Size = new System.Drawing.Size(432, 130);
             this.Target.TabIndex = 0;
-            this.Target.Text = "Click";
-            this.Target.UseVisualStyleBackColor = true;
+            this.Target.Text = "버튼을 잡으세요";
+            this.Target.UseVisualStyleBackColor = false;
             this.Target.Click += new System.EventHandler(this.button1_Click);
             this.Target.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
